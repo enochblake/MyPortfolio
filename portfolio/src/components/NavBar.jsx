@@ -1,25 +1,165 @@
-import React from "react";
+// // // import React, { useState } from "react";
+// // // import { NavLink } from "react-router-dom";
+// // // import './Navbar.scss';
+
+// // // export default function NavBar() {
+// // //   const [navActive, setNavActive] = useState(false);
+
+// // //   const toggleNav = () => {
+// // //     setNavActive(!navActive);
+// // //   };
+
+// // //   return (
+// // //     <nav className="navbar">
+// // //       <ul className={`nav-links ${navActive ? 'nav-active' : ''}`}>
+// // //         <li className="link">
+// // //           <NavLink to="/" exact activeClassName="active" className="nav-link">Home</NavLink>
+// // //         </li>
+// // //         <li className="link">
+// // //           <NavLink to="/about" activeClassName="active" className="nav-link">About</NavLink>
+// // //         </li>
+// // //         <li className="link">
+// // //           <NavLink to="/resume" activeClassName="active" className="nav-link">Resume</NavLink>
+// // //         </li>
+// // //         <li className="link">
+// // //           <NavLink to="/projects" activeClassName="active" className="nav-link">Projects</NavLink>
+// // //         </li>
+// // //         <li className="link">
+// // //           <NavLink to="/contact" activeClassName="active" className="nav-link">Contacts</NavLink>
+// // //         </li>
+// // //       </ul>
+// // //       <div className={`hamburger ${navActive ? 'hamburger-active' : ''}`} onClick={toggleNav}>
+// // //         <span></span>
+// // //         <span></span>
+// // //         <span></span>
+// // //       </div>
+// // //     </nav>
+// // //   );
+// // // }
+
+// // import React, { useState } from "react";
+// // import { NavLink } from "react-router-dom";
+// // import './Navbar.scss';
+
+// // export default function NavBar() {
+// //   const [navActive, setNavActive] = useState(false);
+
+// //   const toggleNav = () => {
+// //     setNavActive(!navActive);
+// //   };
+
+// //   return (
+// //     <nav className="navbar">
+// //       <ul className={`nav-links ${navActive ? 'nav-active' : ''}`}>
+// //         <li className="link">
+// //           <NavLink to="/" exact activeClassName="active" className="nav-link">Home</NavLink>
+// //         </li>
+// //         <li className="link">
+// //           <NavLink to="/about" activeClassName="active" className="nav-link">About</NavLink>
+// //         </li>
+// //         <li className="link">
+// //           <NavLink to="/resume" activeClassName="active" className="nav-link">Resume</NavLink>
+// //         </li>
+// //         <li className="link">
+// //           <NavLink to="/projects" activeClassName="active" className="nav-link">Projects</NavLink>
+// //         </li>
+// //         <li className="link">
+// //           <NavLink to="/contact" activeClassName="active" className="nav-link">Contacts</NavLink>
+// //         </li>
+// //       </ul>
+
+// //       {/* Hamburger Menu */}
+// //       <div className={`hamburger ${navActive ? 'hamburger-active' : ''}`} onClick={toggleNav}>
+// //         <span></span>
+// //         <span></span>
+// //         <span></span>
+// //       </div>
+// //     </nav>
+// //   );
+// // }
+
+
+// import React, { useState } from "react";
+// import { NavLink } from "react-router-dom";
+// import './Navbar.scss';
+
+// export default function NavBar() {
+//   const [navActive, setNavActive] = useState(false);
+
+//   const toggleNav = () => {
+//     setNavActive(!navActive);
+//   };
+
+//   return (
+//     <nav className="navbar">
+//       <ul className={`nav-links ${navActive ? 'nav-active' : ''}`}>
+//         <li className="link">
+//           <NavLink to="/" exact activeClassName="active" className="nav-link">Home</NavLink>
+//         </li>
+//         <li className="link">
+//           <NavLink to="/about" activeClassName="active" className="nav-link">About</NavLink>
+//         </li>
+//         <li className="link">
+//           <NavLink to="/resume" activeClassName="active" className="nav-link">Resume</NavLink>
+//         </li>
+//         <li className="link">
+//           <NavLink to="/projects" activeClassName="active" className="nav-link">Projects</NavLink>
+//         </li>
+//         <li className="link">
+//           <NavLink to="/contact" activeClassName="active" className="nav-link">Contacts</NavLink>
+//         </li>
+//       </ul>
+
+//       {/* Hamburger Menu */}
+//       <div className={`hamburger ${navActive ? 'hamburger-active' : ''}`} onClick={toggleNav}>
+//         <span></span>
+//         <span></span>
+//         <span></span>
+//       </div>
+//     </nav>
+//   );
+// }
+
+
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import './Navbar.scss';
 
- export default function NavBar(){
-    return(
-        <div className="nav">
-            <ul className="navlink">
-                <li className='link'><NavLink to="/" exact activeClassName="active">Home</NavLink></li>
-                <li className='link'><NavLink to="/about" activeClassName="active">About</NavLink></li>
-                <li className='link'><NavLink to="/resume" activeClassName="active">Resume</NavLink></li>
-                <li className='link'><NavLink to="/projects" activeClassName="active">Projects</NavLink></li>
-                <li className='link'><NavLink to="/contact" activeClassName="active">Contacts</NavLink></li>
-            </ul>
-        {/* <div className="text-purple-950  bg-purple-200">
-            <ul className="flex justify-end items-center h-8 px-4">
-                <li className="px-4">Home</li>
-                <li className="px-4">About</li>
-                <li className="px-4">Projects</li>
-                <li className="px-4">Contacts</li>
-            </ul>
-        </div> */}
-        </div>
-    )
- }
+export default function NavBar() {
+  const [navActive, setNavActive] = useState(false);
+
+  const toggleNav = () => {
+    setNavActive(!navActive);
+  };
+
+  return (
+    <nav className="navbar">
+      <ul className={`nav-links ${navActive ? 'nav-active' : ''}`}>
+        <li className="link">
+          <NavLink to="/" exact activeClassName="active" className="nav-link">Home</NavLink>
+        </li>
+        <li className="link">
+          <NavLink to="/about" activeClassName="active" className="nav-link">About</NavLink>
+        </li>
+        <li className="link">
+          <NavLink to="/resume" activeClassName="active" className="nav-link">Resume</NavLink>
+        </li>
+        <li className="link">
+          <NavLink to="/projects" activeClassName="active" className="nav-link">Projects</NavLink>
+        </li>
+        <li className="link">
+          <NavLink to="/contact" activeClassName="active" className="nav-link">Contacts</NavLink>
+        </li>
+      </ul>
+
+      {/* Hamburger Menu */}
+      <div className={`hamburger ${navActive ? 'hamburger-active' : ''}`} onClick={toggleNav}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  );
+}
+
+

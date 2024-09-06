@@ -1,169 +1,878 @@
+// // // // .resume {
+// // // //     display: flex;
+// // // //     min-height: 100%;
+// // // //   }
+  
+// // // //   .side {
+// // // //     width: 20%;
+// // // //     height: auto;
+// // // //     display: flex;
+// // // //     flex-direction: column;
+// // // //     align-items: center;
+// // // //     padding: 0px;
+// // // //     background-color: #8C75AD;
+// // // //   }
+  
+// // // //   .side img {
+// // // //     border-radius: 0% 0% 10% 10%;
+// // // //     margin-bottom: 20px;
+// // // //     width: 100%;
+// // // //   }
+  
+// // // //   .navigation ul {
+// // // //     list-style: none;
+// // // //     padding: 0;
+// // // //   }
+  
+// // // //   .navigation ul li {
+// // // //     margin: 15px 0;
+// // // //     cursor: pointer;
+// // // //     transition: color 0.3s ease;
+// // // //     text-align: left;
+// // // //     background-color: #f7d5fb67;
+// // // //     color: whitesmoke;
+// // // //     width: 20vw;
+// // // //     font-size: 18px;
+// // // //     padding: 10px 50px;
+// // // //     box-shadow: 0 4px 10px #0000001a;
+// // // //     border-radius: 0% 0% 10% 10%;
+// // // //   }
+  
+// // // //   .navigation ul li:hover {
+// // // //     color: #dbd6f0;
+// // // //     font-weight: 600px;
+// // // //     font-size: 19px;
+// // // //     border-bottom: 2px solid #e467195b;
+// // // //     transition: transform 0.3s ease;
+// // // //   }
+  
+// // // //   .main {
+// // // //     width: 80%;
+// // // //     padding: 40px;
+// // // //     background-color: #edf2f4;
+// // // //   }
+  
+// // // //   .resume-title {
+// // // //     font-size: 36px;
+// // // //     margin-bottom: 7px;
+// // // //     color: #4F2E57;
+// // // //   }
+  
+// // // //   section {
+// // // //     margin-bottom: 4rem;
+// // // //   }
+  
+// // // //   h2 {
+// // // //     font-size: 28px;
+// // // //     color: #2b2d42;
+// // // //     margin-bottom: 10px;
+// // // //   }
+  
+// // // //   .educate, .skills-container {
+// // // //     display: flex;
+// // // //     gap: 20px;
+// // // //   }
+  
+// // // //   .school, .job {
+// // // //     background-color: white;
+// // // //     border-radius: 10px;
+// // // //     padding: 20px;
+// // // //     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// // // //     transition: transform 0.3s ease, box-shadow 0.3s ease;
+// // // //   }
+  
+// // // //   .school:hover, .job:hover {
+// // // //     transform: translateY(-5px);
+// // // //     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+// // // //   }
+  
+// // // //   .date-icon {
+// // // //     display: flex;
+// // // //     align-items: center;
+// // // //     gap: 10px;
+// // // //     color: #8d99ae;
+// // // //     margin-bottom: 10px;
+// // // //   }
+  
+// // // //   .info {
+// // // //     display: flex;
+// // // //     align-items: center;
+// // // //     gap: 10px;
+// // // //     color: #2b2d42;
+// // // //   }
+  
+// // // //   .skills-container {
+// // // //     display: flex;
+// // // //     flex-direction: column;
+// // // //   }
+  
+// // // //   .nav-resume {
+// // // //     list-style: none;
+// // // //     padding: 0;
+// // // //     margin: 0;
+// // // //   }
+  
+// // // //   .resume-skills {
+// // // //     margin: 10px;
+// // // //     color: #2b2d42;
+// // // //     display: flex;
+// // // //     align-items: center;
+// // // //     text-align: left;
+// // // //     background-color: #c1b2f534;
+// // // //     width: 95%;
+// // // //     border-radius: 10px;
+// // // //     padding: 10px;
+// // // //     gap: 10px;
+// // // //     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// // // //     transition: transform 0.3s ease, box-shadow 0.3s ease;
+// // // //   }
+  
+// // // //   ul li svg {
+// // // //     margin-right: 8px;
+// // // //     color: #e46719;
+// // // //     font-size: 1.2em;
+// // // //   }
+  
+// // // //   .tech-skills ul{
+// // // //     padding-left: 20px;
+// // // //     text-align: left;
+// // // //     display: grid;
+// // // //     grid-template-columns: repeat(4, 1fr);
+// // // //     background-color: white;
+// // // //     border-radius: 10px;
+// // // //     padding: 20px;
+// // // //     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// // // //     transition: transform 0.3s ease, box-shadow 0.3s ease;
+// // // //   }
+// // // //   .soft-skills ul {
+// // // //     padding-left: 20px;
+// // // //     text-align: left;
+// // // //     display: grid;
+// // // //     grid-template-columns: repeat(3, 1fr);
+// // // //     background-color: white;
+// // // //     border-radius: 10px;
+// // // //     padding: 20px;
+// // // //     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// // // //     transition: transform 0.3s ease, box-shadow 0.3s ease;
+// // // //   }
+  
+// // // //   .tech-skills ul li::before, .soft-skills ul li::before {
+// // // //     content: none;
+// // // //   }
+  
+// // // //   .skills-container h3 {
+// // // //     font-size: 21px;
+// // // //     margin-bottom: 15px;
+// // // //     color: #1c245299;
+// // // //     background-color: #c1b2f58a;
+// // // //   }
+
+
+
+// // // .resume {
+// // //   display: flex;
+// // //   min-height: 100%;
+// // // }
+
+// // // .side {
+// // //   width: 20%;
+// // //   height: auto;
+// // //   display: flex;
+// // //   flex-direction: column;
+// // //   align-items: center;
+// // //   padding: 0px;
+// // //   background-color: #d9d9d9; /* Light grey for the side panel */
+// // // }
+
+// // // .side img {
+// // //   border-radius: 0% 0% 10% 10%;
+// // //   margin-bottom: 20px;
+// // //   width: 100%;
+// // // }
+
+// // // .navigation ul {
+// // //   list-style: none;
+// // //   padding: 0;
+// // // }
+
+// // // .navigation ul li {
+// // //   margin: 15px 0;
+// // //   cursor: pointer;
+// // //   transition: color 0.3s ease;
+// // //   text-align: left;
+// // //   background-color: #f9e79f; /* Soft yellow */
+// // //   color: #4d4d4d; /* Dark grey */
+// // //   width: 20vw;
+// // //   font-size: 18px;
+// // //   padding: 10px 50px;
+// // //   box-shadow: 0 4px 10px #0000001a;
+// // //   border-radius: 0% 0% 10% 10%;
+// // // }
+
+// // // .navigation ul li:hover {
+// // //   color: #ffd700; /* Gold yellow */
+// // //   font-weight: bold;
+// // //   font-size: 19px;
+// // //   border-bottom: 2px solid #f0b429; /* Brighter yellow */
+// // //   transition: transform 0.3s ease;
+// // // }
+
+// // // .main {
+// // //   width: 80%;
+// // //   padding: 40px;
+// // //   background-color: #f2f2f2; /* Light grey background for main content */
+// // // }
+
+// // // .resume-title {
+// // //   font-size: 36px;
+// // //   margin-bottom: 7px;
+// // //   color: #ffcc00; /* Bright yellow for title */
+// // // }
+
+// // // section {
+// // //   margin-bottom: 4rem;
+// // // }
+
+// // // h2 {
+// // //   font-size: 28px;
+// // //   color: #5a5a5a; /* Medium grey for headings */
+// // //   margin-bottom: 10px;
+// // // }
+
+// // // .educate, .skills-container {
+// // //   display: flex;
+// // //   gap: 20px;
+// // // }
+
+// // // .school, .job {
+// // //   background-color: white;
+// // //   border-radius: 10px;
+// // //   padding: 20px;
+// // //   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// // //   transition: transform 0.3s ease, box-shadow 0.3s ease;
+// // // }
+
+// // // .school:hover, .job:hover {
+// // //   transform: translateY(-5px);
+// // //   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+// // // }
+
+// // // .date-icon {
+// // //   display: flex;
+// // //   align-items: center;
+// // //   gap: 10px;
+// // //   color: #b3b3b3; /* Light grey for date icon */
+// // //   margin-bottom: 10px;
+// // // }
+
+// // // .info {
+// // //   display: flex;
+// // //   align-items: center;
+// // //   gap: 10px;
+// // //   color: #333333; /* Dark grey for info text */
+// // // }
+
+// // // .skills-container {
+// // //   display: flex;
+// // //   flex-direction: column;
+// // // }
+
+// // // .nav-resume {
+// // //   list-style: none;
+// // //   padding: 0;
+// // //   margin: 0;
+// // // }
+
+// // // .resume-skills {
+// // //   margin: 10px;
+// // //   color: #4d4d4d; /* Dark grey for skill text */
+// // //   display: flex;
+// // //   align-items: center;
+// // //   text-align: left;
+// // //   background-color: #f4f1c9; /* Light yellow background */
+// // //   width: 95%;
+// // //   border-radius: 10px;
+// // //   padding: 10px;
+// // //   gap: 10px;
+// // //   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// // //   transition: transform 0.3s ease, box-shadow 0.3s ease;
+// // // }
+
+// // // ul li svg {
+// // //   margin-right: 8px;
+// // //   color: #ffcc00; /* Yellow for icons */
+// // //   font-size: 1.2em;
+// // // }
+
+// // // .tech-skills ul, .soft-skills ul {
+// // //   padding-left: 20px;
+// // //   text-align: left;
+// // //   display: grid;
+// // //   grid-template-columns: repeat(4, 1fr);
+// // //   background-color: white;
+// // //   border-radius: 10px;
+// // //   padding: 20px;
+// // //   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// // //   transition: transform 0.3s ease, box-shadow 0.3s ease;
+// // // }
+
+// // // .soft-skills ul {
+// // //   grid-template-columns: repeat(3, 1fr);
+// // // }
+
+// // // .tech-skills ul li::before, .soft-skills ul li::before {
+// // //   content: none;
+// // // }
+
+// // // .skills-container h3 {
+// // //   font-size: 21px;
+// // //   margin-bottom: 15px;
+// // //   color: #b3b3b3; /* Light grey for section titles */
+// // //   background-color: #fff9c4; /* Pale yellow background */
+// // // }
+
+// // /* General page styling */
+// // body {
+// //   margin: 0;
+// //   padding: 0;
+// //   font-family: 'Arial', sans-serif;
+// // }
+
+// // /* Main container styling */
+// // .container {
+// //   display: flex;
+// //   flex-direction: row;
+// //   justify-content: space-between;
+// //   background-color: #f5f5f5; /* Light background for the main section */
+// //   color: #333333; /* General dark text color for better readability */
+// // }
+
+// // /* Sidebar styling */
+// // .side {
+// //   width: 20%;
+// //   height: auto;
+// //   display: flex;
+// //   flex-direction: column;
+// //   align-items: center;
+// //   padding: 0;
+// //   background-color: #4d4d4d; /* Dark grey for sidebar background */
+// // }
+
+// // .side img {
+// //   border-radius: 0% 0% 10% 10%;
+// //   margin-bottom: 20px;
+// //   width: 100%;
+// // }
+
+// // .navigation ul {
+// //   list-style: none;
+// //   padding: 0;
+// //   margin: 0;
+// // }
+
+// // .navigation ul li {
+// //   margin: 15px 0;
+// //   cursor: pointer;
+// //   text-align: center;
+// //   background-color: #ffcc00; /* Bright yellow for visibility */
+// //   color: #333333; /* Dark text for contrast */
+// //   padding: 10px;
+// //   border-radius: 0 0 10% 10%;
+// //   width: 100%;
+// //   font-size: 18px;
+// //   transition: all 0.3s ease;
+// // }
+
+// // .navigation ul li:hover {
+// //   background-color: #e0a800; /* Slightly darker yellow for hover */
+// //   color: #ffffff; /* White text on hover */
+// //   font-weight: bold;
+// //   border-bottom: 2px solid #ffffff;
+// // }
+
+// // /* Main content area styling */
+// // .main-content {
+// //   width: 75%;
+// //   padding: 20px;
+// //   background-color: #ffffff; /* White background for main content */
+// // }
+
+// // /* Resume section styling */
+// // .resume-section {
+// //   margin-bottom: 40px;
+// // }
+
+// // .resume-section h2 {
+// //   color: #ff9900; /* Bold yellowish-orange headers */
+// //   font-size: 28px;
+// //   margin-bottom: 20px;
+// //   font-weight: bold;
+// // }
+
+// // .resume-section .education, .experience {
+// //   margin-bottom: 30px;
+// // }
+
+// // .education .card, .experience .card {
+// //   background-color: #ffffff;
+// //   border-radius: 10px;
+// //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// //   padding: 15px;
+// //   margin-bottom: 15px;
+// // }
+
+// // /* Skills section */
+// // .skills-section {
+// //   background-color: #f9f9f9; /* Light grey background for skills */
+// //   padding: 30px;
+// //   border-radius: 10px;
+// // }
+
+// // .skills-section h3 {
+// //   font-size: 24px;
+// //   color: #ff9900; /* Yellowish-orange heading */
+// //   margin-bottom: 20px;
+// // }
+
+// // .skills-section .skills {
+// //   display: flex;
+// //   flex-wrap: wrap;
+// //   justify-content: space-between;
+// // }
+
+// // .skills-section .skill {
+// //   background-color: #fff68f; /* Yellowish background */
+// //   color: #333333; /* Dark text for skills */
+// //   padding: 10px;
+// //   margin: 10px;
+// //   border-radius: 5px;
+// //   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+// //   width: calc(33.333% - 20px);
+// //   text-align: center;
+// // }
+
+// // .skills-section .skill img {
+// //   width: 40px;
+// //   height: auto;
+// //   display: block;
+// //   margin: 0 auto 10px;
+// // }
+
+// // /* Footer styling */
+// // footer {
+// //   text-align: center;
+// //   padding: 20px;
+// //   background-color: #ffcc00;
+// //   color: #333333;
+// //   font-size: 14px;
+// // }
+
+// // /* Media Queries for responsiveness */
+// // @media (max-width: 1024px) {
+// //   .container {
+// //     flex-direction: column;
+// //   }
+
+// //   .side {
+// //     width: 100%;
+// //     height: auto;
+// //   }
+
+// //   .main-content {
+// //     width: 100%;
+// //   }
+// // }
+
+// // @media (max-width: 768px) {
+// //   .skills-section .skill {
+// //     width: calc(50% - 20px);
+// //   }
+// // }
+
+// // @media (max-width: 480px) {
+// //   .skills-section .skill {
+// //     width: 100%;
+// //   }
+// // }
+
+// body {
+//   margin: 0;
+//   padding: 0;
+//   font-family: 'Arial', sans-serif;
+// }
+
+// .resume {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   background-color: #f5f5f5;
+//   color: #333333;
+//   padding: 20px;
+// }
+
+// /* Sidebar styling */
+// .side {
+//   width: 25%;
+//   background-color: #4d4d4d;
+//   padding: 20px;
+// }
+
+// .side img {
+//   width: 100%;
+//   border-radius: 0% 0% 10% 10%;
+//   margin-bottom: 20px;
+// }
+
+// .navigation ul {
+//   list-style: none;
+//   padding: 0;
+// }
+
+// .navigation ul li {
+//   margin: 15px 0;
+//   text-align: center;
+//   background-color: #ffcc00;
+//   color: #333333;
+//   padding: 10px;
+//   border-radius: 0 0 10% 10%;
+//   font-size: 18px;
+//   transition: all 0.3s ease;
+// }
+
+// .navigation ul li:hover {
+//   background-color: #e0a800;
+//   color: #ffffff;
+//   font-weight: bold;
+// }
+
+// /* Main content area styling */
+// .main {
+//   width: 70%;
+//   background-color: #ffffff;
+//   padding: 20px;
+// }
+
+// h1 {
+//   color: #f0a314;
+// }
+
+// section h2 {
+//   background-color: #f7b24c;
+//   color: #333;
+//   font-size: 24px;
+//   padding: 10px;
+//   margin-bottom: 20px;
+// }
+
+// /* Education and Experience cards */
+// .educate, .experience {
+//   margin-bottom: 30px;
+// }
+
+// .school, .job {
+//   background-color: #ffffff;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//   padding: 15px;
+//   margin-bottom: 15px;
+// }
+
+// .date-icon {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .date-icon span {
+//   margin-left: 8px;
+//   font-size: 16px;
+// }
+
+// .info {
+//   display: flex;
+//   align-items: center;
+//   margin-top: 10px;
+// }
+
+// .info span {
+//   margin-left: 8px;
+// }
+
+// /* Skills section */
+// .skills-container {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .skills-container .tech-skills, .skills-container .soft-skills {
+//   width: 48%;
+// }
+
+// .skills-container h3 {
+//   background-color: #f7b24c;
+//   padding: 10px;
+//   margin-bottom: 20px;
+// }
+
+// .nav-resume {
+//   list-style: none;
+//   padding: 0;
+// }
+
+// .nav-resume li {
+//   margin-bottom: 10px;
+//   display: flex;
+//   align-items: center;
+//   font-size: 16px;
+// }
+
+// .nav-resume li svg {
+//   margin-right: 10px;
+// }
+
+// /* Footer styling */
+// footer {
+//   text-align: center;
+//   padding: 20px;
+//   background-color: #ffcc00;
+//   color: #333333;
+//   font-size: 14px;
+// }
+
+// /* Media Queries */
+// @media (max-width: 1024px) {
+//   .resume {
+//     flex-direction: column;
+//   }
+
+//   .side {
+//     width: 100%;
+//   }
+
+//   .main {
+//     width: 100%;
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .skills-container {
+//     flex-direction: column;
+//   }
+
+//   .skills-container .tech-skills, .skills-container .soft-skills {
+//     width: 100%;
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .nav-resume li {
+//     font-size: 14px;
+//   }
+// }
+
+// Base styling
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
 .resume {
-    display: flex;
-    min-height: 100%;
-  }
-  
-  .side {
-    width: 20%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    background-color: #8C75AD;
-  }
-  
-  .side img {
-    border-radius: 0% 0% 10% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  color: #333333;
+  padding: 20px;
+  box-sizing: border-box; // Include padding in width
+}
+
+// Sidebar styling
+.side {
+  width: 25%;
+  background-color: #4d4d4d;
+  padding: 20px;
+  box-sizing: border-box; // Include padding in width
+
+  img {
+    width: 100%;
+    border-radius: 0 0 10% 10%;
     margin-bottom: 20px;
+  }
+}
+
+// Navigation styling
+.navigation {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 15px 0;
+      text-align: center;
+      background-color: #ffcc00;
+      color: #333333;
+      padding: 10px;
+      border-radius: 0 0 10% 10%;
+      font-size: 18px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #e0a800;
+        color: #ffffff;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Main content area styling
+.main {
+  width: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box; // Include padding in width
+
+  h1 {
+    color: #f0a314;
+  }
+
+  section {
+    h2 {
+      background-color: #f7b24c;
+      color: #333;
+      font-size: 24px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Education and Experience cards
+.educate, .experience {
+  margin-bottom: 30px;
+
+  .school, .job {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.date-icon {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 8px;
+    font-size: 16px;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  span {
+    margin-left: 8px;
+  }
+}
+
+// Skills section
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; // Allow wrapping on smaller screens
+
+  .tech-skills, .soft-skills {
+    width: 48%;
+  }
+
+  h3 {
+    background-color: #f7b24c;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+// Resume navigation
+.nav-resume {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+// Footer styling
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffcc00;
+  color: #333333;
+  font-size: 14px;
+}
+
+// Media Queries
+@media (max-width: 1024px) {
+  .resume {
+    flex-direction: column;
+  }
+
+  .side {
+    width: 100%;
+    margin-bottom: 20px; // Space between sidebar and main content
+  }
+
+  .main {
     width: 100%;
   }
-  
-  .navigation ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .navigation ul li {
-    margin: 15px 0;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    text-align: left;
-    background-color: #f7d5fb67;
-    color: whitesmoke;
-    width: 20vw;
-    font-size: 18px;
-    padding: 10px 50px;
-    box-shadow: 0 4px 10px #0000001a;
-    border-radius: 0% 0% 10% 10%;
-  }
-  
-  .navigation ul li:hover {
-    color: #dbd6f0;
-    font-weight: 600px;
-    font-size: 19px;
-    border-bottom: 2px solid #e467195b;
-    transition: transform 0.3s ease;
-  }
-  
-  .main {
-    width: 80%;
-    padding: 40px;
-    background-color: #edf2f4;
-  }
-  
-  .resume-title {
-    font-size: 36px;
-    margin-bottom: 7px;
-    color: #4F2E57;
-  }
-  
-  section {
-    margin-bottom: 4rem;
-  }
-  
-  h2 {
-    font-size: 28px;
-    color: #2b2d42;
-    margin-bottom: 10px;
-  }
-  
-  .educate, .skills-container {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .school, .job {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .school:hover, .job:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .date-icon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #8d99ae;
-    margin-bottom: 10px;
-  }
-  
-  .info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #2b2d42;
-  }
-  
+}
+
+@media (max-width: 768px) {
   .skills-container {
-    display: flex;
     flex-direction: column;
+
+    .tech-skills, .soft-skills {
+      width: 100%;
+      margin-bottom: 20px; // Space between sections
+    }
   }
-  
-  .nav-resume {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+  .side img {
+    height: auto; // Ensure images scale properly
   }
-  
-  .resume-skills {
-    margin: 10px;
-    color: #2b2d42;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    background-color: #c1b2f534;
-    width: 95%;
-    border-radius: 10px;
-    padding: 10px;
-    gap: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .navigation ul li {
+    font-size: 16px;
+    padding: 8px; // Reduce padding for smaller screens
   }
-  
-  ul li svg {
-    margin-right: 8px;
-    color: #e46719;
-    font-size: 1.2em;
+}
+
+@media (max-width: 480px) {
+  .nav-resume li {
+    font-size: 14px;
   }
-  
-  .tech-skills ul{
-    padding-left: 20px;
-    text-align: left;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .resume {
+    padding: 10px; // Reduce padding for smaller screens
   }
-  .soft-skills ul {
-    padding-left: 20px;
-    text-align: left;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .main, .side {
+    padding: 10px; // Reduce padding for smaller screens
   }
-  
-  .tech-skills ul li::before, .soft-skills ul li::before {
-    content: none;
+
+  section h2 {
+    font-size: 20px; // Reduce font size for smaller screens
   }
-  
-  .skills-container h3 {
-    font-size: 21px;
-    margin-bottom: 15px;
-    color: #1c245299;
-    background-color: #c1b2f58a;
-  }
-  
+}

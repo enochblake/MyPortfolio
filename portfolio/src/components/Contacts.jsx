@@ -9,21 +9,21 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 export default function Contacts() {
     return (
         <div className="contacts-container">
-            <h1 className="text-3xl font-extrabold text-center mb-6 mt-6" style={{ color: '#4F2E57' }}>Contact Me!</h1>
+            <h1 className="title">Contact Me!</h1>
             <div className="form-container">
                 <h2 className="form-title">Let's Chat!</h2>
                 <div className="contact-links">
-                    <a href="mailto:esaru008@gmail.com" className="contact-icon" title="Email Me">
+                    <a href="mailto:enochblake9@gmail.com" className="contact-icon" title="Email Me">
                         <FaEnvelope />
                     </a>
-                    <a href="https://www.linkedin.com/in/efjeniah-saru-0b3ba62b9" className="contact-icon" title="LinkedIn Profile">
+                    <a href="https://www.linkedin.com/in/enoch-kibet-4a1a78322/" className="contact-icon" title="LinkedIn Profile">
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com/E-Saru" className="contact-icon" title="GitHub Profile">
+                    <a href="https://github.com/enochblake" className="contact-icon" title="GitHub Profile">
                         <FaGithub />
                     </a>
                 </div>
-                <form className="contact-form" action="https://formsubmit.co/esaru008@gmail.com" method="POST">
+                <form className="contact-form" action="https://formsubmit.co/enochblake9@gmail.com" method="POST">
                     <div className="form-group">
                         <label className="form-label"><IoMdContact /> Name:</label>
                         <input type="text" name="name" placeholder="Enter your name" required className="form-input" />
@@ -40,6 +40,11 @@ export default function Contacts() {
                         <label className="form-label">Message:</label>
                         <textarea name="message" placeholder="Enter your message" required className="form-textarea"></textarea>
                     </div>
+                    
+                    {/* Hidden fields for security and redirection */}
+                    {/* <input type="hidden" name="_next" value="https://your-website.com/thank-you" />
+                    <input type="hidden" name="_captcha" value="false" /> */}
+
                     <button className="form-submit" type="submit">
                         Submit <BsFillSendFill />
                     </button>
@@ -48,4 +53,3 @@ export default function Contacts() {
         </div>
     );
 }
-
